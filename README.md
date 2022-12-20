@@ -3,7 +3,7 @@ Repo for final project in Deep Learning DTU.
 
 The following descriptions instruct on how to use the code in this repo.
 
-prediction_generate.ipynb: This code generates the predictions using these four different combinations of model and evaluation datasets:
+**prediction_generate.ipynb**: This code generates the predictions using these four different combinations of model and evaluation datasets:
 
 1. deepset/roberta-base-squad2-covid model and Covid-19 QA dataset
 2. deepset/roberta-base-squad2-covid model and Covid-19 news dataset
@@ -22,14 +22,14 @@ For these different model combinations we run predictions using 6 different pipe
 5. Elastic search document store, TF-IDF retriever, which retrievs the top 10 documents from the document store, FarmReader predicting 5 answers.
 6. Elastic search document store, BM25 retriever which retrievs the top 10 documents from the document store, FarmReader predicting 5 answers.
 
-performance_metrics.ipynb(SIGGA): This code assesses the performnce of the different model combinations and the predicton they generated on the different evaluation datasets. The predictions generated from prediction_generate.ipynb code that are used for the performance metrics are available in the prediction folder in this repo.
+**performance_metrics.ipynb**(SIGGA): This code assesses the performnce of the different model combinations and the predicton they generated on the different evaluation datasets. The predictions generated from prediction_generate.ipynb code that are used for the performance metrics are available in the prediction folder in this repo.
 
 This code DDADADADA
 
-prediction_cleanup.ipynb(Magnea): Cleanup of bad questions from evaluation datasets. In order to obtain a fair assessment of the models capabilities a human inspections was conducted. 
+**prediction_cleanup.ipynb**(Magnea): Cleanup of bad questions from evaluation datasets. In order to obtain a fair assessment of the models capabilities a human inspections was conducted. 
 
 This code DADAADADA
                            
-demo_backend.ipynb: This generates predictions for the demo we used for the presentation. It uses the WIKI API document store and the deepset/roberta-base-squad2-covid model since it is most likely to generate successful answers to common human COVID-19 questions.
+**demo_backend.ipynb**: This generates predictions for the demo we used for the presentation. It uses the WIKI API document store and the deepset/roberta-base-squad2-covid model since it is most likely to generate successful answers to common human COVID-19 questions. Link to demo: https://d42jgu7ysexg7zjh.anvil.app/OUGGLVAQTFBAT5NYIROIPGOZ . Run the notebook through and leave the last cell running while you want to ask questions in the demo.
 
                     
