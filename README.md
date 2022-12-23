@@ -22,9 +22,9 @@ For these different model combinations we run predictions using 6 different pipe
 5. Elastic search document store, TF-IDF retriever, which retrievs the top 10 documents from the document store, FarmReader predicting 5 answers.
 6. Elastic search document store, BM25 retriever which retrievs the top 10 documents from the document store, FarmReader predicting 5 answers.
 
-**evaluation_covidQA.ipynb**(SIGGA): This code assesses the performnce of the different model combinations and the predicton they generated on the different evaluation datasets. The predictions generated from prediction_generate.ipynb code that are used for the performance metrics are available in the prediction folder in this repo.
+**evaluation_covidQA.ipynb**(SIGGA): This notebook can be found int the evaluation folder along with the predictions generated from prediction_generate.ipynb on different evaluation datasets. This code assesses the performnce of the different model combinations. The predictions generated from prediction_generate.ipynb code that are used for the performance metrics are available in the prediction folder in this repo.
 
-This code DDADADADA
+This code evalates the different model combinations. To evaluate the models we decided to try few different performance metrics. That is RougeL score, Rouge1 score, keyword analysis and TFIDF.
 
 **prediction_cleanup.ipynb**(Magnea): Cleanup of bad questions from evaluation datasets. In order to obtain a fair assessment of the models capabilities a human inspections was conducted. 
 
