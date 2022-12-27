@@ -3,7 +3,7 @@ Repo for final project in Deep Learning DTU.
 
 The following descriptions instruct on how to use the code in this repo.
 
-**prediction_generate.ipynb**: This code generates the predictions using these four different combinations of model and evaluation datasets:
+**prediction_generate_qa.ipynb**: This code generates the predictions using these four different combinations of model and evaluation datasets:
 
 1. deepset/roberta-base-squad2-covid model and Covid-19 QA dataset
 2. deepset/roberta-base-squad2-covid model and Covid-19 news dataset
