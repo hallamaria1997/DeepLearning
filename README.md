@@ -22,13 +22,11 @@ For these different model combinations we run predictions using 6 different pipe
 5. Elastic search document store, TF-IDF retriever, which retrievs the top 10 documents from the document store, FarmReader predicting 5 answers.
 6. Elastic search document store, BM25 retriever which retrievs the top 10 documents from the document store, FarmReader predicting 5 answers.
 
-**evaluation_covidQA.ipynb**(SIGGA): This notebook can be found int the evaluation folder along with the predictions generated from prediction_generate.ipynb on different evaluation datasets. This code assesses the performnce of the different model combinations. The predictions generated from prediction_generate.ipynb code that are used for the performance metrics are available in the Evaluation folder in this repo.
+**evaluation_covidQA.ipynb**(SIGGA): This notebook can be found int the evaluation folder along with the predictions generated from prediction_generate.ipynb on different evaluation datasets. This code assesses the performance of the different model combinations. The predictions generated from prediction_generate_qa.ipynb code that are used for the performance metrics are available in the Evaluation folder in this repo.
 
-This code evalates the different model combinations. To evaluate the models we decided to try few different performance metrics. That is RougeL score, Rouge1 score, keyword analysis and TFIDF.
+This code evaluates the different model combinations. To evaluate the models we decided to try few different performance metrics. That is RougeL score, Rouge1 score, keyword analysis and TFIDF Cosine-Similarity.
 
-**prediction_cleanup.ipynb**(Magnea): Cleanup of bad questions from evaluation datasets. In order to obtain a fair assessment of the models capabilities a human inspections was conducted. 
-
-This code DADAADADA
+The Covid News dataset contained some outdated answers as it was created in 2020 early on in the pandemic. Therefore some cleanup of the answers was done for the Covid News dataset where we updated the true answer to reflect the current situation in the world. An example of answers that was updated is the answer to the question "Is there a vaccine for Covid-19?", in the dataset the answer is no but we now know that there is infact a vaccine for Covid-19. It was important to update these answers as our system is fetching possible contexts from current documents.
                            
 **demo_backend.ipynb**: This generates predictions for the demo we used for the presentation. It uses the WIKI API document store and the deepset/roberta-base-squad2-covid model since it is most likely to generate successful answers to common human COVID-19 questions. Link to demo: https://d42jgu7ysexg7zjh.anvil.app/OUGGLVAQTFBAT5NYIROIPGOZ . Run the notebook through and leave the last cell running while you want to ask questions in the demo.
 
